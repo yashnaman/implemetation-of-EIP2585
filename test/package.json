@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:js": "browserify --standalone moduleTry ./src/index.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "light-server -s . -p 9090 -w \"./src/**/*.js, ./*.html # npm run build:js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biconomy/mexa": "^1.5.1",
+    "browserify": "^16.5.0",
+    "light-server": "^2.6.4",
+    "web3": "^1.2.6"
+  },
+  "scripts": {
+    "build:js": "browserify ./src/index.js > bundle.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "light-server -s . -p 9090 -w \"./src/**/*.js, ./*.html # npm run build:js\""
+  }
+}
